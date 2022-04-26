@@ -11,6 +11,9 @@ const MovieCard = ({ movie }) => {
             <img
             src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder/400'}
             alt={movie.Title}
+            onClick={() => (
+              window.location.assign("https://www.imdb.com/title/" + movie.imdbID)    
+            )}
             >
             </img>
         </div>
